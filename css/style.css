@@ -22,7 +22,6 @@ header{
   background-size: cover;
   width: 100%;
 }
-.container{}
 
 ul{
   margin:0;
@@ -36,17 +35,13 @@ ul{
   color: #00000;
   margin-top: 5px;
   text-align: center;
-
-
-
 }
 
 .header{
 background-color = #35424a;
-color = #ffffff;
+color = #7FFFD4;
 padding-top: 30px;
 min-height: 70px;
-/*border-bottom: #e8491d 3px solid;*/
 }
 .header a {
   color: #ffffff;
@@ -65,6 +60,7 @@ header #branding{
 }
 header #branding h1 {
   margin: 0;
+  color: white;
 }
 header nav {
   float: right;
@@ -83,7 +79,6 @@ header a:hover {
 /*Showcase area*/
 #showcase{
 min-height: 400px;
-/*background-color:rgb(0, 0, 0);*/
 text-align: center;
 color:#ffffff;
 background-image: url(../img/laptop.jpeg);
@@ -98,6 +93,8 @@ background-size: cover;
   color: white;}
 .branding p{
   font-weight: bold;
+  color: red;
+  font-size: 20px;
 }
 #newsletter{
   padding: 15px;
@@ -121,32 +118,35 @@ background-size: cover;
 
 footer{
   padding: 20px;
-  /*margin-top:20px;*/
-  color: #ffffff;
-  background-color: #e8491d;
+  background-color: black;
   text-align: center;
 }
+footer p{
+  color: white;
+}
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 850px;
+  max-height: 80%;;
   position: relative;
   margin: auto;
 
 }
-/*.border {
-  border: 3px;
-  border-color: red;
-}*/
 .sliderImag{
-  height: 650PX;
+  height: 550PX;
   width:100%;
   border: 3px solid #7FFFD4;
   border-radius: 10px;
 }
+.y{width: 100%}
+.n{text-align:center}
 .img {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
 }
 .prev, .next {
   cursor: pointer;
@@ -160,6 +160,9 @@ footer{
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+}
+.mrg {
+  margin-top: 8%
 }
 
 /* Position the "next button" to the right */
@@ -180,7 +183,7 @@ footer{
   font-weight: bold;
   padding: 10px 50px;
   position: absolute;
-  bottom: 300px;
+  bottom: 250px;
   width: 100%;
   text-align: center;
 }
@@ -236,10 +239,6 @@ footer{
 .bcgdimg{
   background-image: url("file:///home/yahya/Desktop/wooden-wall-1463762753dz6.jpg");
 }
-/*.imgbc{
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-}*/
 
 
 /* Walaa Code is here */
@@ -326,23 +325,21 @@ html {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	position: relative;
-	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
 .card img:hover
 {
 	border-radius: 50%;
-	-webkit-transform: scale(0.9);
-	-ms-transform: scale(0.9);
 	transform: scale(0.9);
 	opacity: 0.7;
 }
 /*contact>>>>>>>>>>>>>>*/
 
+
 .bgimg {
-  background:url(../images/p4.jpg) no-repeat center;
+  background:url(../img/p4.jpg) no-repeat center;
 	background-size:cover;
-	/*background-attachment:fixed;*/
+	background-attachment:fixed;
 	filter: blur(3px);
 	position:absolute;
   margin: 0 40;
@@ -352,21 +349,30 @@ html {
 	z-index:0;
 }
 
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .form {
 	background:#fff;
 	width:500px;
 	max-width:100%;
 	box-sizing:border-box;
 	padding:15px;
-	margin-top: 25px;
-  margin-left: 30%;
 	position:relative;
 	z-index:1;
 	box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
 }
 .form_container {
 	padding:15px;
 	border:1px dashed #ccc;
+
 }
 .form h2 {
 	font-size:1.5em;
@@ -388,7 +394,7 @@ html {
 .form .row {
 	margin:10px -15px;
 }
-.form .row > div {
+.form .row  div {
 	padding:0 15px;
 	box-sizing:border-box;
 }
@@ -436,12 +442,12 @@ html {
 	border:1px solid #f5ba1a;
 }
 .form input[type="submit"] {
-	background:#e8491d;
+	background:#000;
 	width:100%;
-	color:black;
+	color:white;
 	font-size:1.2em;
 	transition: all 0.30s ease-in-out;
 }
 .form input[type="submit"]:hover, .form input[type="submit"]:focus {
-	background:#b22d08;
+	background:#555;
 }
