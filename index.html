@@ -11,9 +11,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-	<h2>The Team</h2>
+		<div class="row">
+	<div class="col">
+	<h2>The Team</h2></div>
 	<br>
-	<div class="row">
 	  <div class="column">
 	    <div class="card">
 	      <img src="images/member1.jpg" alt="Yasmin" style="width:100%">
@@ -34,14 +35,14 @@
 	        <h2>Walaa Mohtaseb</h2>
 	        <p class="title">Developer</p>
 	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-	        <p>example@example.com</p>
+	        <p>walaa.mohtaseb@gmail.com</p>
 	        <p><button class="button">Contact</button></p>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="column">
 	    <div class="card">
-	      <img src="/images/member3.jpg" alt="yahya" style="width:100%">
+	      <img src="images/member3.jpg" alt="yahya" style="width:100%">
 	      <div class="container">
 	        <h2>Yahya Albarrawi</h2>
 	        <p class="title">Designer</p>
@@ -52,6 +53,56 @@
 	    </div>
 	  </div>
 	</div>
+<br><br>
+
+<!-- contact us-->
+<div class="bgimg"></div>
+<div class="form">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Contact Us</h2>
+    </div>
+    <form>
+      <div class="row clearfix">
+        <div class="col_half">
+          <label>First name</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+            <input type="text" name="first_name" placeholder="walaa" required />
+          </div>
+        </div>
+        <div class="col_half">
+          <label>Last name</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+            <input type="text" name="last_name" placeholder="mohtaseb" />
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col_half">
+          <label>Email</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="walaa@gmail.com" required />
+          </div>
+        </div>
+        <div class="col_half">
+          <label>Phone</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+            <input type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div>
+          <label>Comments</label>
+          <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+            <textarea cols="46" rows="3" name="comments"></textarea>
+          </div>
+        </div>
+      </div>
+      <input class="button" type="submit" value="Submit" />
+    </form>
+  </div>
+</div>
 
 	</body>
 	</html>
