@@ -55,7 +55,7 @@ html {
 }
 
 .title {
-  color: grey;
+  color: #262424;
 }
 
 .button {
@@ -95,14 +95,15 @@ html {
 /*contact>>>>>>>>>>>>>>*/
 
 .bgimg {
-  background:url(../images/p2.jpg) no-repeat center;
+  background:url(../images/p4.jpg) no-repeat center;
 	background-size:cover;
-	background-attachment:fixed;
-	filter: blur(8px);
+	/*background-attachment:fixed;*/
+	filter: blur(3px);
 	position:absolute;
   margin: 0 40;
-	height:100%;
-	width:100%;
+	height:500px;
+	left: 0;
+  right: 0;
 	z-index:0;
 }
 
@@ -112,7 +113,8 @@ html {
 	max-width:100%;
 	box-sizing:border-box;
 	padding:15px;
-	margin:10% auto 0;
+	margin-top: 25px;
+  margin-left: 30%;
 	position:relative;
 	z-index:1;
 	box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
@@ -173,7 +175,7 @@ html {
 .form .input_field  span i, .form.textarea_field  span  i {
 	padding-top:12px;
 }
-.form input[type="text"], .form input[type="email"], .form input[type="tel"], textarea {
+.form input[type="text"], .form input[type="email"], .form input[type="tel"], .form textarea {
 	width:100%;
 	padding:10px 10px 10px 35px;
 	border:1px solid #ccc;
@@ -181,7 +183,7 @@ html {
 	outline:none;
 	transition: all 0.30s ease-in-out;
 }
-.formr textarea {
+.form textarea {
 	height:8em;
 }
 .form input[type="text"]:focus, .form input[type="email"]:focus, .form input[type="tel"]:focus,.form textarea:focus {
@@ -191,7 +193,7 @@ html {
 .form input[type="submit"] {
 	background:#e8491d;
 	width:100%;
-	color:#fff;
+	color:black;
 	font-size:1.2em;
 	transition: all 0.30s ease-in-out;
 }

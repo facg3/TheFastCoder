@@ -65,41 +65,41 @@
     <form>
       <div class="row clearfix">
         <div class="col_half">
-          <label>First name</label>
+          <label for="fn">First name</label>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-            <input type="text" name="first_name" placeholder="walaa" required />
+            <input type="text" id="fn" name="first_name" placeholder="walaa" required />
           </div>
         </div>
         <div class="col_half">
-          <label>Last name</label>
+          <label for="ln">Last name</label>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-            <input type="text" name="last_name" placeholder="mohtaseb" />
+            <input type="text" id="ln" name="last_name" placeholder="mohtaseb" />
           </div>
         </div>
       </div>
       <div class="row clearfix">
         <div class="col_half">
-          <label>Email</label>
+          <label for="email">Email</label>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-            <input type="email" name="email" placeholder="walaa@gmail.com" required />
+            <input id ='email' type="email" name="email" placeholder="walaa@gmail.com" required />
           </div>
         </div>
         <div class="col_half">
-          <label>Phone</label>
+          <label for="tel">Phone</label>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
-            <input type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
+            <input id="tel" type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
           </div>
         </div>
       </div>
       <div class="row clearfix">
         <div>
-          <label>Comments</label>
+          <label for="comm">Comments</label>
           <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
-            <textarea cols="46" rows="3" name="comments"></textarea>
+            <textarea id="comm" cols="46" rows="3" name="comments"></textarea>
           </div>
         </div>
       </div>
-      <input class="button" type="submit" value="Submit" />
+      <label for="butt"><input id="butt" class="button" type="submit" value="Submit" /></label>
     </form>
   </div>
 </div>
