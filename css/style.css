@@ -28,6 +28,47 @@ ul{
   padding: 0;
 }
 
+@media only screen and (max-width : 650px) {
+    .header {
+        width:95%;
+        background-color:#fff;
+        margin: 0 auto;
+        min-height:100px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+    }
+
+    nav li:hover ul {
+        display:block;
+    }
+
+    nav li ul {
+        width:100%;
+    }
+
+    nav li ul li {
+        display:none;
+        padding-left:10px;
+        width:100%;
+    }
+    .branding{
+      max-height:200px;
+
+    }
+    .branding h1 {
+      font-weight: 100;
+      font-size: 20px;
+
+    }
+}
+
 .button_1 {
   height: 38px;
   background:#e8491d;
@@ -55,10 +96,10 @@ header li{
   display: inline;
   padding: 0 20px 0 20px;
 }
-header #branding{
+header .brand{
   float: left;
 }
-header #branding h1 {
+header .brand h1 {
   margin: 0;
   color: white;
 }
@@ -76,15 +117,7 @@ header a:hover {
   font-weight: bold;
 }
 
-/*Showcase area*/
-#showcase{
-min-height: 400px;
-text-align: center;
-color:#ffffff;
-background-image: url(../img/laptop.jpeg);
-background-size: cover;
 
-}
 .branding {
   padding-top: 50px;
   margin-top: 100px;
@@ -96,12 +129,12 @@ background-size: cover;
   color: red;
   font-size: 20px;
 }
-#newsletter{
+.newsletter{
   padding: 15px;
   color:#ffffff;
   background:#35424a;
 }
-#newsletter h1 {
+.newsletter h1 {
   float: left;
 }
 
@@ -253,7 +286,6 @@ html {
 .column {
   float: left;
   width: 33.3%;
-  /*margin-bottom: 16px;*/
   padding: 0 8px;
 }
 
@@ -366,13 +398,10 @@ html {
 	position:relative;
 	z-index:1;
 	box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
-  align-items: center;
-  justify-content: center;
 }
 .form_container {
 	padding:15px;
 	border:1px dashed #ccc;
-
 }
 .form h2 {
 	font-size:1.5em;
@@ -394,7 +423,7 @@ html {
 .form .row {
 	margin:10px -15px;
 }
-.form .row  div {
+.form .row > div {
 	padding:0 15px;
 	box-sizing:border-box;
 }
